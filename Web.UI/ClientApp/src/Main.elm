@@ -65,7 +65,7 @@ view model =
     div []
         [ img [ src "/logo.svg" ] []
         , h1 [] [ text "Your Elm App is working!" ]
-        , h2 [] [ text "Random Cats" ]
+        , h2 [] [ text "Get Image Url from server" ]
         , viewGif model
         ]
 
