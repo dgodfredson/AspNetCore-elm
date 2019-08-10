@@ -64,7 +64,7 @@ view : Model -> Html Msg
 view model =
     div []
         [ img [ src "/logo.svg" ] []
-        , h1 [] [ text "Your Elm App is working....even better...!" ]
+        , h1 [] [ text "Your Elm App is working!" ]
         , h2 [] [ text "Random Cats" ]
         , viewGif model
         ]
@@ -118,7 +118,3 @@ getRandomCatGif =
 gifDecoder : Decoder String
 gifDecoder =
     field "image_url" string
-
-
-
--- field "data" (field "image_url" string)
