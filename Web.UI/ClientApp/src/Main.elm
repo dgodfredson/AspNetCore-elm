@@ -1,6 +1,7 @@
 module Main exposing (Model(..), Msg(..), getRandomCatGif, gifDecoder, init, main, subscriptions, update, view, viewGif)
 
 import Browser
+import Home
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
@@ -67,6 +68,7 @@ view model =
         , h1 [] [ text "Your Elm App is working!" ]
         , h2 [] [ text "Get Image Url from server" ]
         , viewGif model
+        , Home.viewTest
         ]
 
 
